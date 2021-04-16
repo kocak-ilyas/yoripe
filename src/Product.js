@@ -7,7 +7,7 @@ const Product = (data) => {
 		<div className="col-6 col-sm-4 col-lg-3 p-2">
 			<div className="facebtn center-block btn-material btn-material-default">
 				<div className="card ">
-					<div className="d-flex flex-row mb-1 position-relative">
+					<div className="d-flex  mb-1 position-relative">
 						<div className="col align-self-end position-absolute m-0 p-3">
 							<img
 								className="border border-1 rounded-circle m-1 p-0"
@@ -17,6 +17,9 @@ const Product = (data) => {
 								height="20%"
 							/>
 						</div>
+						<div className="col align-self-start position-absolute m-0 p-3 text-white">
+							<span>aaa</span>
+						</div>
 
 						<img
 							className="rounded-top m-0 p-0"
@@ -25,9 +28,6 @@ const Product = (data) => {
 							src={data.product.imageURL}
 							alt={data.product.name}
 						/>
-						{/* <div className="col align-self-end position-absolute">
-      One of three columns
-    </div> */}
 					</div>
 					<div className="d-flex justify-content-between install mt-3">
 						<span>
@@ -38,10 +38,6 @@ const Product = (data) => {
 						<span className="text-black-50">{data.product.name}</span>
 						<span>
 							<ProductDate date={data.product.date} />{' '}
-						</span>
-						<span className="text-primary">
-							Like: {data.product.like} &nbsp;
-							<i className="fa fa-angle-right" />
 						</span>
 					</div>
 				</div>
