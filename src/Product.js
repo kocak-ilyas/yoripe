@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay, CardBody, CardSubtitle, Button, Badge } from 'reactstrap';
+import ProductDate from './ProductDate';
+import "./productStyles.css";
 
 const Product = (data) => {
 	return (
@@ -16,9 +18,11 @@ const Product = (data) => {
 					</CardTitle>
 					<CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
 					<CardText className="mb-2 text-muted">{data.product.explanation}</CardText>{' '}
-					<CardText>
-						<small className="text-muted">{data.product.date}</small>
-					</CardText>
+					{/* <CardText> */}
+						{/* <small className="text-muted"> */}
+							<ProductDate date={data.product.date}/>
+						{/* </small> */}
+					{/* </CardText> */}
 					<Button color="primary" outline>
 						{data.product.price} <Badge color="warning" className="m-0 p-1">$</Badge>
 					</Button>
