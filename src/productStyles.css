@@ -3,7 +3,7 @@ body {
 }
 
 .ratings i {
-    color: green
+    color: #008000
 }
 
 .install span {
@@ -11,72 +11,77 @@ body {
 }
 
 .col-md-4 {
-    margin-top: 27px
+    margin-top: 0px
 }
 
-.btn-material-link:hover, 
-.btn-material:not([className^="btn-material btn-material-"]):hover, 
+.btn-material-link:hover,
+.btn-material:not([className^="btn-material btn-material-"]):hover,
 .btn-material-default:hover {
-    color: rgba(0,0,0,.84);}
+    color: rgba(0, 0, 0, .84);
+}
 
 .btn-material:hover:not(.btn-material-link) {
-        box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 
-        0 3px 6px rgb(0 0 0 / 28%);
-    }
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 28%);
+}
 
-    button.facebtn {
-        text-align: center;
-        margin: 0 auto;
-        border: 0;
-        line-height: 75px;
-    }
+button.facebtn {
+    text-align: center;
+    margin: 0 auto;
+    border: 0;
+    line-height: 25px;
+}
 
-    .btn-material {
-        position: relative;
-            padding: 8px 30px;
-        border-radius: 4px;
-        text-transform: uppercase;
-        text-decoration: none;
-        -webkit-transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
-        transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
-        outline: none!important;
-    }
-    .center-block {
-        display: block;
-    }
- 
+.btn-material {
+    position: relative;
+    padding: 0px 0px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+    transition: box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+    outline: none!important;
+}
 
-    button {
-        overflow: visible;
-    }
-    button, input, optgroup, select, textarea {
-  
-        color: inherit;
-    }
+.center-block {
+    display: block;
+}
 
-    * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    button {
-        appearance: auto;
-        text-rendering: auto;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-indent: 0px;
-        text-shadow: none;
-        align-items: flex-start;
-        box-sizing: border-box;
-        font: 400 13.3333px Arial;
-    }
-    .tab-content>.active {
-        display: block;
-        visibility: visible;
-    }
-    .tab-content>.tab-pane {
-        display: none;
-        visibility: hidden;
-    }
+button {
+    overflow: visible;
+}
 
- 
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    align-items: flex-start;
+    box-sizing: border-box;
+    font: 400 13.3333px Arial;
+}
+
+.tab-content>.active {
+    display: block;
+    visibility: visible;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+    visibility: hidden;
+}

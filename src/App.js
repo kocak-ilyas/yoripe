@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Container, Row} from 'reactstrap';
 import API from 'apisauce';
 import './App.css';
 import Product from './Product';
@@ -38,11 +37,11 @@ function App() {
 		<div className="App">
 			<h1>{data ? data : null}</h1>
 			<button onClick={handleGet}>GET</button>
-			<Container>
-				<Row >
+			<div className="container">
+				<div className="row">
 					{products ? products.map((product) => <Product product={product} key={product.id} />) : <Loading />}
-				</Row>
-			</Container>
+				</div>
+			</div>
 			<button onClick={handlePost}>POST</button>
 			<ScreenFooter />
 		</div>
