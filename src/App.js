@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import API from 'apisauce';
 import './App.css';
 import Product from './Product';
@@ -33,6 +33,9 @@ function App() {
 				console.log('error :>> ', error);
 			});
 	};
+	useEffect(() => {
+		handleGet()
+	}, [])
 	return (
 		<div className="App">
 			<h1>{data ? data : null}</h1>
