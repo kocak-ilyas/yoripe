@@ -14,7 +14,7 @@ const Product = (data) => {
 					<CardTitle className="mb-2 text-dark" tag="h2">
 						{data.product.name}{' '}
 					</CardTitle>
-					{/* <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle> */}
+					<CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
 					<CardText className="mb-2 text-muted">{data.product.explanation}</CardText>{' '}
 					<CardText>
 						<small className="text-muted">{data.product.date}</small>
