@@ -10,7 +10,6 @@ import SortNav from './SortNav/SortNav';
 const baseURL = 'https://private-e76dd9-kocakilyas.apiary-mock.com';
 const ApiCall = API.create({ baseURL: baseURL });
 function App() {
-	// const [ data, setData ] = useState(null);
 	const [ products, setProducts ] = useState(null);
 
 	const handleGet = () => {
@@ -23,16 +22,7 @@ function App() {
 				console.log('error :>> ', error);
 			});
 	};
-	// const handlePost = () => {
-	// 	ApiCall.post('/api', { name: 'postName' })
-	// 		.then((res) => {
-	// 			setData(res.data.message);
-	// 			console.log('POST Method is success');
-	// 		})
-	// 		.catch((error) => {
-	// 			console.log('error :>> ', error);
-	// 		});
-	// };
+
 	useEffect(() => {
 		handleGet();
 	}, []);
@@ -43,16 +33,30 @@ function App() {
 				<SortNav />
 			</div>
 
-			{/* <h1>{data ? data : null}</h1> */}
-			{/* <button onClick={handleGet}>GET</button> */}
 			<div className="container-fluid">
 				<div className="row">
 					{products ? products.map((product) => <Product product={product} key={product.id} />) : <Loading />}
 				</div>
 			</div>
-			{/* <button onClick={handlePost}>POST</button> */}
+
 			<ScreenFooter />
 		</div>
 	);
 }
 export default App;
+
+// const [ data, setData ] = useState(null);
+// const handlePost = () => {
+// 	ApiCall.post('/api', { name: 'postName' })
+// 		.then((res) => {
+// 			setData(res.data.message);
+// 			console.log('POST Method is success');
+// 		})
+// 		.catch((error) => {
+// 			console.log('error :>> ', error);
+// 		});
+// };
+
+// <h1>{data ? data : null}</h1>
+// <button onClick={handleGet}>GET</button>
+// <button onClick={handlePost}>POST</button>
