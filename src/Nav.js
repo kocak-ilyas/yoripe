@@ -7,7 +7,7 @@ const Nav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 	return (
-		<div className="App">
+		<div>
 			<Collapse isOpen={isOpen}>
 				<div className="bg-dark">
 					<div className="container">
@@ -62,8 +62,8 @@ const Nav = () => {
 							</div>
 						</div>
 						<label>
-							<input
-								className="form-control rounded"
+							<input aria-live="polite"
+								className="form-control rounded pl-5"
 								type="search"
 								placeholder="Search Products"
 								aria-label="Search"
