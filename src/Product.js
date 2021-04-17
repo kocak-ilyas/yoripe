@@ -9,7 +9,7 @@ const Product = (data) => {
 				<div className="card ">
 					<div className="d-flex mb-1 position-relative">
 						<img
-							className="rounded-top m-0 p-0 opacity-img"
+							className="rounded-top m-0 p-0 product-img"
 							width="100%"
 							height="150px"
 							src={data.product.imageURL}
@@ -39,19 +39,18 @@ const Product = (data) => {
 									<h6>{data.product.name}</h6>
 								</div>
 								<div className="col">
-							{		console.log(data.product.name)}
 									<span className="text-black-50">{data.product.explanation}</span>
 								</div>
-								<div className="col text-lowercase">
+								<div className="col mt-2">
 									<span>
 										<ProductDate date={data.product.date} />{' '}
 									</span>
 								</div>
-								<div className="col">
-									<span>
+								<div className="row justify-content-end mb-2 mt-0">
+									<strong>
 										$&nbsp;
 										{data.product.price}
-									</span>
+									</strong>
 								</div>
 							</div>
 						</div>
