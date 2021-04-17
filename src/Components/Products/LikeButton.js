@@ -1,5 +1,5 @@
 import React from 'react';
-import eyeLogo from './eyeLogo.svg';
+import eyeLogo from '../../image/eyeLogo.svg';
 
 const LikeButton = (item) => {
 	return (

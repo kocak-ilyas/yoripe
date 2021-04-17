@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import API from 'apisauce';
 import './App.css';
-import Product from './Product';
-import ScreenFooter from './ScreenFooter';
-import Loading from './Loading';
-import Nav from './Nav';
+import Product from './Products/Product';
+import ScreenFooter from './Footer/ScreenFooter';
+import Loading from './Products/Loading';
+import MenuNav from './MenuNav/MenuNav';
 
 const baseURL = 'https://private-e76dd9-kocakilyas.apiary-mock.com';
 const ApiCall = API.create({ baseURL: baseURL });
@@ -37,7 +37,7 @@ function App() {
 	}, []);
 	return (
 		<div className="App m-3" style={{backgroundColor: "#faf7f7"}}>
-			<Nav />
+			<MenuNav />
 			{/* <h1>{data ? data : null}</h1> */}
 			{/* <button onClick={handleGet}>GET</button> */}
 			<div className="container-fluid">

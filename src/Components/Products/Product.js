@@ -1,7 +1,7 @@
 import React from 'react';
 import LikeButton from './LikeButton';
 import ProductDate from './ProductDate';
-import './productStyles.css';
+import './styles.css';
 const Product = (data) => {
 	return (
 		<div className="col-6 col-sm-4 col-lg-3 p-1">
