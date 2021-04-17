@@ -53,7 +53,7 @@ const Nav = () => {
 					</div>
 				</div>
 			</Collapse>
-			<div className="navbar shadow-sm">
+			<div className="navbar">
 				<div className="container">
 					<div className="input-group mb-3">
 						<div className="input-group-prepend">
