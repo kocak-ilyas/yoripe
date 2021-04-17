@@ -7,7 +7,12 @@ const Product = (data) => {
 		<div className="col-6 col-sm-4 col-lg-3 p-2">
 			<div className="facebtn center-block btn-material btn-material-default">
 				<div className="card ">
-					<div className="d-flex  mb-1 position-relative">
+					<div className="d-flex mb-1 position-relative">
+						<div className="col align-self-start position-absolute m-0 p-3 text-white">
+							<div className="row align-self-end">
+								<span>aaa</span>
+							</div>
+						</div>
 						<div className="col align-self-end position-absolute m-0 p-3">
 							<img
 								className="border border-1 rounded-circle m-1 p-0"
@@ -17,10 +22,6 @@ const Product = (data) => {
 								height="20%"
 							/>
 						</div>
-						<div className="col align-self-start position-absolute m-0 p-3 text-white">
-							<span>aaa</span>
-						</div>
-
 						<img
 							className="rounded-top m-0 p-0"
 							width="100%"
