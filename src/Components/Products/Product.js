@@ -1,5 +1,5 @@
 import React from 'react';
-import LikeButton from './LikeButton';
+import LikeCounter from './LikeCounter';
 import ProductDate from './ProductDate';
 import './styles.css';
 const Product = (data) => {
@@ -18,7 +18,7 @@ const Product = (data) => {
 						<div className="container position-absolute">
 							<div className="row justify-content-end">
 								<div className="col-7 col-md-6 mr-0 mt-2">
-									<LikeButton like={data.product.like} />
+									<LikeCounter like={data.product.like} />
 								</div>
 							</div>
 						</div>

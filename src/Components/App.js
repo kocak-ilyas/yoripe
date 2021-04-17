@@ -5,6 +5,7 @@ import Product from './Products/Product';
 import ScreenFooter from './Footer/ScreenFooter';
 import Loading from './Products/Loading';
 import MenuNav from './MenuNav/MenuNav';
+import SortNav from './SortNav/SortNav';
 
 const baseURL = 'https://private-e76dd9-kocakilyas.apiary-mock.com';
 const ApiCall = API.create({ baseURL: baseURL });
@@ -36,8 +37,12 @@ function App() {
 		handleGet();
 	}, []);
 	return (
-		<div className="App m-3" style={{backgroundColor: "#faf7f7"}}>
-			<MenuNav />
+		<div className="App m-3" style={{ backgroundColor: '#faf7f7' }}>
+			<div className="m-0 p-0">
+				<MenuNav />
+				<SortNav />
+			</div>
+
 			{/* <h1>{data ? data : null}</h1> */}
 			{/* <button onClick={handleGet}>GET</button> */}
 			<div className="container-fluid">

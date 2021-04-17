@@ -11,8 +11,8 @@ const MenuNav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 	return (
-		<div>
-			<Collapse isOpen={isOpen}>
+		<div className="m-0 p-0">
+		<Collapse isOpen={isOpen}>
 				<div className="bg-dark">
 					<div className="container">
 						<div className="row">
