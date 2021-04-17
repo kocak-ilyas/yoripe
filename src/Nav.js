@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Collapse } from 'reactstrap';
 import menuIcon from './menuIcon.svg';
+import './navStyles.css';
 
 const Nav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -57,38 +58,28 @@ const Nav = () => {
 					<div className="input-group mb-3">
 						<div className="input-group-prepend">
 							<div className="btn mr-1 p-1" type="button" onClick={toggle}>
-                                <img src={menuIcon} height="20px" alt="menuIcon" />
+								<img src={menuIcon} height="20px" alt="menuIcon" />
 							</div>
 						</div>
-						<input
-							className="form-control rounded"
-							type="search"
-							placeholder="Search Products"
-							aria-label="Search"
-						/>
+						<label>
+							<input
+								className="form-control rounded"
+								type="search"
+								placeholder="Search Products"
+								aria-label="Search"
+							/>
+						</label>
+
+						{/* <label>
+							<input
+								className="form-label rounded nav-input"
+								type="search"
+								placeholder="Search Products"
+								aria-label="Search"
+							/>
+						</label> */}
 					</div>
-
-					<form className="form-inline">
-						{/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
-					</form>
-
 					<a href="/" className="navbar-brand d-flex align-items-center">
-						{/* <svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							height="20"
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							aria-hidden="true"
-							className="me-2"
-							viewBox="0 0 24 24"
-						>
-							<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-							<circle cx="12" cy="13" r="4" />
-						</svg> */}
 						<div>
 							<p>
 								<strong>zill</strong>
