@@ -8,12 +8,12 @@ const SortNav = () => {
 	return (
         <div className="navbar pt-0">
         <div className="container m-0 p-0">
-			<div
+			<span
 				onClick={() => handleChange('popular')}
 				className={clicked === 'popular' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'}
 			>
 				Popular
-			</div>
+			</span>
 			<span
 				onClick={() => handleChange('auction')}
 				className={clicked === 'auction' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'}
