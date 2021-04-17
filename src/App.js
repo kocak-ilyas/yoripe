@@ -37,10 +37,10 @@ function App() {
 		handleGet()
 	}, [])
 	return (
-		<div className="App">
+		<div className="App m-3">
 			<h1>{data ? data : null}</h1>
 			<button onClick={handleGet}>GET</button>
-			<div className="container">
+			<div className="container-fluid">
 				<div className="row">
 					{products ? products.map((product) => <Product product={product} key={product.id} />) : <Loading />}
 				</div>

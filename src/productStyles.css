@@ -85,3 +85,7 @@ button {
     display: none;
     visibility: hidden;
 }
+
+.opacity-img {
+    opacity: 0.8;
+}

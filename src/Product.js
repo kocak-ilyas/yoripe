@@ -1,16 +1,25 @@
 import React from 'react';
+import LikeButton from './LikeButton';
 import ProductDate from './ProductDate';
 import './productStyles.css';
-
 const Product = (data) => {
 	return (
-		<div className="col-6 col-sm-4 col-lg-3 p-2">
+		<div className="col-6 col-sm-4 col-lg-3 p-1">
 			<div className="facebtn center-block btn-material btn-material-default">
 				<div className="card ">
 					<div className="d-flex mb-1 position-relative">
-						<div className="col align-self-start position-absolute m-0 p-3 text-white">
-							<div className="row align-self-end">
-								<span>aaa</span>
+						<img
+							className="rounded-top m-0 p-0 opacity-img"
+							width="100%"
+							height="150px"
+							src={data.product.imageURL}
+							alt={data.product.name}
+						/>
+						<div className="container position-absolute">
+							<div className="row justify-content-end">
+								<div className="col-7 col-md-6 mr-0 mt-2">
+									<LikeButton like={data.product.like} />
+								</div>
 							</div>
 						</div>
 						<div className="col align-self-end position-absolute m-0 p-3">
@@ -22,24 +31,30 @@ const Product = (data) => {
 								height="20%"
 							/>
 						</div>
-						<img
-							className="rounded-top m-0 p-0"
-							width="100%"
-							height="190px"
-							src={data.product.imageURL}
-							alt={data.product.name}
-						/>
 					</div>
 					<div className="d-flex justify-content-between install mt-3">
-						<span>
-							$&nbsp;
-							{data.product.price}
-						</span>
-						<span className="text-black-50">{data.product.explanation}</span>
-						<span className="text-black-50">{data.product.name}</span>
-						<span>
-							<ProductDate date={data.product.date} />{' '}
-						</span>
+						<div className="container">
+							<div className="row row-cols-1">
+								<div className="col">
+									<h6>{data.product.name}</h6>
+								</div>
+								<div className="col">
+							{		console.log(data.product.name)}
+									<span className="text-black-50">{data.product.explanation}</span>
+								</div>
+								<div className="col text-lowercase">
+									<span>
+										<ProductDate date={data.product.date} />{' '}
+									</span>
+								</div>
+								<div className="col">
+									<span>
+										$&nbsp;
+										{data.product.price}
+									</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
