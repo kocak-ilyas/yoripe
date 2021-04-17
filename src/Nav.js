@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Collapse, Row, Col } from 'reactstrap';
+import { Collapse } from 'reactstrap';
+import menuIcon from './menuIcon.svg';
 
 const Nav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -51,12 +52,26 @@ const Nav = () => {
 					</div>
 				</div>
 			</Collapse>
-			<div className="navbar navbar-dark bg-dark shadow-sm">
-				<div className="container"><button className="navbar-toggler" type="button" onClick={toggle}>
-						<span className="navbar-toggler-icon" />
-					</button>
-                    <div>Search</div>
-                   
+			<div className="navbar shadow-sm">
+				<div className="container">
+					<div className="input-group mb-3">
+						<div className="input-group-prepend">
+							<div className="btn mr-1 p-1" type="button" onClick={toggle}>
+                                <img src={menuIcon} height="20px" alt="menuIcon" />
+							</div>
+						</div>
+						<input
+							className="form-control rounded"
+							type="search"
+							placeholder="Search Products"
+							aria-label="Search"
+						/>
+					</div>
+
+					<form className="form-inline">
+						{/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
+					</form>
+
 					<a href="/" className="navbar-brand d-flex align-items-center">
 						{/* <svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +95,6 @@ const Nav = () => {
 							</p>
 						</div>
 					</a>
-					
 				</div>
 			</div>
 		</div>
