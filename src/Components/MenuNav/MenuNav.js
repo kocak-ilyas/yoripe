@@ -65,7 +65,7 @@ const MenuNav = () => {
 								<img src={menuIcon} height="20px" alt="menuIcon" />
 							</div>
 						</div>
-						<label className="col">
+						<label className="col pr-1">
 							<input
 								aria-live="polite"
 								className="form-control rounded pl-5"
