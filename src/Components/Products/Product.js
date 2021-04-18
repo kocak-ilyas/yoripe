@@ -11,13 +11,13 @@ const Product = (data) => {
 						<img
 							className="rounded-top m-0 p-0 product-img"
 							width="100%"
-							height="150px"
+							height="140px"
 							src={data.product.imageURL}
 							alt={data.product.name}
 						/>
 						<div className="container position-absolute">
 							<div className="row justify-content-end">
-								<div className="col-7 col-md-6 mr-0 mt-2">
+								<div className="float-md-end mr-2 mt-1">
 									<LikeCounter like={data.product.like} />
 								</div>
 							</div>
@@ -32,14 +32,16 @@ const Product = (data) => {
 							/>
 						</div>
 					</div>
-					<div className="d-flex justify-content-between install mt-3">
+					<div className="d-flex justify-content-between install mt-1">
 						<div className="container">
 							<div className="row row-cols-1">
 								<div className="col">
 									<h6>{data.product.name}</h6>
 								</div>
-								<div className="col">
-									<span className="text-black-50">{data.product.explanation}</span>
+								<div className="col p-2">
+									<span style={{ fontSize: '0.6rem' }} className="text-black-50">
+										{data.product.explanation}
+									</span>
 								</div>
 								<div className="col mt-2">
 									<span>
