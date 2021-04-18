@@ -52,7 +52,7 @@ const Product = (data) => {
 										style={{
 											fontSize: '0.6rem',
 											lineHeight: '1.2',
-											height: '20px',
+											height: '22px',
 											overflow: 'hidden',
 											textOverflow: 'ellipsis'
 										}}
