@@ -35,11 +35,16 @@ const Product = (data) => {
 					<div className="d-flex justify-content-between install mt-1">
 						<div className="container">
 							<div className="row row-cols-1">
-								<div className="col">
+								<div className="col" style={{
+											fontSize: '1rem',
+											lineHeight: '1.2',
+											height: '22px',
+											overflow: 'hidden',
+											textOverflow: 'ellipsis'
+										}}>
 									<h6>{data.product.name}</h6>
 								</div>
 								<div className="col pl-2 pr-2 m-1">
-									{/* <div className="col pl-2 pr-2 m-1" style={{ height:"4px"}}> */}
 									<div
 										style={{
 											fontSize: '0.6rem',

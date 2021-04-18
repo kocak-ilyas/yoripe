@@ -17,6 +17,7 @@ function App() {
 			.then((res) => {
 				setProducts(res.data.products);
 				console.log('GET Method is success');
+				console.log(res.data);
 			})
 			.catch((error) => {
 				console.log('error :>> ', error);
