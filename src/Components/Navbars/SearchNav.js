@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Badge from '@material-ui/core/Badge';
 import IconButton from '@material-ui/core/IconButton';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import Slide from 'react-reveal/Slide';
 
 import menuIcon from '../../image/menuIcon.svg';
 import './styles.css';
@@ -12,14 +11,6 @@ const SearchNav = () => {
 	const toggle = () => setIsOpen(!isOpen);
 	return (
 		<div className="m-0 p-0">
-			<div>
-				<Slide top when={isOpen}>
-					<h1>React Reveal</h1>
-				</Slide>
-				<button className="btn btn-success my-5" type="button" onClick={toggle}>
-					{isOpen ? 'Hide' : 'Show'} Message
-				</button>
-			</div>
 			{isOpen && (
 				<div className="bg-dark">
 					<div className="container">
