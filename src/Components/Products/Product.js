@@ -40,7 +40,7 @@ const Product = (data) => {
 									style={{
 										fontSize: '1rem',
 										lineHeight: '1.2',
-										height: '22px',
+										height: '19px',
 										overflow: 'hidden',
 										textOverflow: 'ellipsis'
 									}}
@@ -52,7 +52,7 @@ const Product = (data) => {
 										style={{
 											fontSize: '0.6rem',
 											lineHeight: '1.2',
-											height: '22px',
+											height: '19px',
 											overflow: 'hidden',
 											textOverflow: 'ellipsis'
 										}}
