@@ -7,13 +7,12 @@ Setup and run : ```npm i && npm start```
 <h6>Demo                : https://yoripe.netlify.app/ </h6>
 <h6>Repository          : https://github.com/kocak-ilyas/yoripe.git </h6>
 <hr/>
-<h5>Contact:</h3>
+<h5>Contact:</h5>
 <h6>Linkedin            : https://www.linkedin.com/in/ilyaskocak</h6>
 <h6>Gmail               : kocakilyas18@gmail.com </h6>
 <h6>GitHub              : https://github.com/kocak-ilyas</h6>
 <h6>Mobile Number       : +90 537 305 1855  - I am using WhatsApp and Skype -</h6>
 <hr/>
-<<<<<<< HEAD
+
+# Mobile Screen
 <img src="./src/image/mobileScreen.jpg" alt="mobileScreen"/>
-=======
->>>>>>> 7589233d2213133331ef886cd553ab753e089375
