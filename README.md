@@ -7,8 +7,7 @@ Setup and run : ```npm i && npm start```
 <h6>Demo                : https://yoripe.netlify.app/ </h6>
 <h6>Repository          : https://github.com/kocak-ilyas/yoripe.git </h6>
 <hr/>
-<h3>Contact:</h3>
-<br/>
+<h5>Contact:</h3>
 <h6>Linkedin            : https://www.linkedin.com/in/ilyaskocak</h6>
 <h6>Gmail               : kocakilyas18@gmail.com </h6>
 <h6>GitHub              : https://github.com/kocak-ilyas</h6>
