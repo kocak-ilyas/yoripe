@@ -38,12 +38,22 @@ const Product = (data) => {
 								<div className="col">
 									<h6>{data.product.name}</h6>
 								</div>
-								<div className="col p-2">
-									<span style={{ fontSize: '0.6rem' }} className="text-black-50">
+								<div className="col pl-2 pr-2 m-1">
+									{/* <div className="col pl-2 pr-2 m-1" style={{ height:"4px"}}> */}
+									<div
+										style={{
+											fontSize: '0.6rem',
+											lineHeight: '1.2',
+											height: '22px',
+											overflow: 'hidden',
+											textOverflow: 'ellipsis'
+										}}
+										className="text-black-50"
+									>
 										{data.product.explanation}
-									</span>
+									</div>
 								</div>
-								<div className="col mt-2">
+								<div className="col mt-0">
 									<span>
 										<ProductDate date={data.product.date} />{' '}
 									</span>
