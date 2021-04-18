@@ -4,8 +4,8 @@ import './App.css';
 import Product from './Products/Product';
 import ScreenFooter from './Footer/ScreenFooter';
 import Loading from './Products/Loading';
-import MenuNav from './MenuNav/MenuNav';
-import SortNav from './SortNav/SortNav';
+import SearchNav from './Navbars/SearchNav';
+import SortNav from './Navbars/SortNav';
 
 const baseURL = 'https://private-e76dd9-kocakilyas.apiary-mock.com';
 const ApiCall = API.create({ baseURL: baseURL });
@@ -30,11 +30,11 @@ function App() {
 	return (
 		<div className="App m-3" style={{ backgroundColor: '#faf7f7' }}>
 			<div className="m-0 p-0">
-				<MenuNav />
+				<SearchNav />
 				<SortNav />
 			</div>
 
-			<div className="container-fluid">
+			<div className="container-fluid mb-5">
 				<div className="row">
 					{products ? products.map((product) => <Product product={product} key={product.id} />) : <Loading />}
 				</div>

@@ -1,18 +1,26 @@
 import React, { useState } from 'react';
-import { Collapse } from 'reactstrap';
 import Badge from '@material-ui/core/Badge';
 import IconButton from '@material-ui/core/IconButton';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import Slide from 'react-reveal/Slide';
 
 import menuIcon from '../../image/menuIcon.svg';
 import './styles.css';
 
-const MenuNav = () => {
+const SearchNav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
 	const toggle = () => setIsOpen(!isOpen);
 	return (
 		<div className="m-0 p-0">
-		<Collapse isOpen={isOpen}>
+			<div>
+				<Slide top when={isOpen}>
+					<h1>React Reveal</h1>
+				</Slide>
+				<button className="btn btn-success my-5" type="button" onClick={toggle}>
+					{isOpen ? 'Hide' : 'Show'} Message
+				</button>
+			</div>
+			{isOpen && (
 				<div className="bg-dark">
 					<div className="container">
 						<div className="row">
@@ -56,7 +64,7 @@ const MenuNav = () => {
 						</div>
 					</div>
 				</div>
-			</Collapse>
+			)}
 			<div className="navbar">
 				<div className="container m-0 p-0">
 					<div className="input-group mb-1 p-1">
@@ -85,4 +93,4 @@ const MenuNav = () => {
 		</div>
 	);
 };
-export default MenuNav;
+export default SearchNav;

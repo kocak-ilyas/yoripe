@@ -26,7 +26,7 @@ const ScreenFooter = () => {
 	const classes = useStyles();
 
 	return (
-		<AppBar position="fixed" color="light" className={classes.appBar}>
+		<AppBar position="fixed" color="inherit" className={classes.appBar}>
 			<Toolbar className="container navbar p-2">
 				<button className="btn p-1">
 					<img src={homeOutline} alt="homeOutline" />
