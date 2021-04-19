@@ -1,1 +1,5 @@
-export const productsState = { isLoading: true, productsTable: {} };
+export const productsState = {
+	isLoading: true,
+    filterItem:"",
+	productsTable: {}
+};

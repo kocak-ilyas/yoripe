@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+import { filterProducts } from '../../redux/actions';
 
 const SortNav = () => {
-	const [ clicked, setClicked ] = useState('');
-	const handleChange = (data) => {
-		setClicked(data);
+	const dispatch = useDispatch();
+	const products = useSelector((state) => state.productsReducer);
+
+	const handleChange = (filterParameter) => {
+		dispatch(filterProducts(products, filterParameter));
 	};
 	return (
 		<div className="navbar pt-0">
@@ -11,7 +16,11 @@ const SortNav = () => {
 				<span
 					onClick={() => handleChange('popular')}
 					className={
-						clicked === 'popular' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'
+						products.filterItem === 'popular' ? (
+							'badge bg-warning text-dark p-1'
+						) : (
+							'badge bg-light text-dark p-1'
+						)
 					}
 				>
 					Popular
@@ -19,7 +28,11 @@ const SortNav = () => {
 				<span
 					onClick={() => handleChange('auction')}
 					className={
-						clicked === 'auction' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'
+						products.filterItem === 'auction' ? (
+							'badge bg-warning text-dark p-1'
+						) : (
+							'badge bg-light text-dark p-1'
+						)
 					}
 				>
 					Auction
@@ -27,7 +40,11 @@ const SortNav = () => {
 				<span
 					onClick={() => handleChange('flatRate')}
 					className={
-						clicked === 'flatRate' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'
+						products.filterItem === 'flatRate' ? (
+							'badge bg-warning text-dark p-1'
+						) : (
+							'badge bg-light text-dark p-1'
+						)
 					}
 				>
 					Flat-rate
@@ -35,7 +52,11 @@ const SortNav = () => {
 				<span
 					onClick={() => handleChange('scheduled')}
 					className={
-						clicked === 'scheduled' ? 'badge bg-warning text-dark p-1' : 'badge bg-light text-dark p-1'
+						products.filterItem === 'scheduled' ? (
+							'badge bg-warning text-dark p-1'
+						) : (
+							'badge bg-light text-dark p-1'
+						)
 					}
 				>
 					Scheduled

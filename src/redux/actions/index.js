@@ -15,3 +15,13 @@ export const getProducts = () => (dispatch) => {
 			console.log(error);
 		});
 };
+export const filterProducts = (products, filterParameter) => (dispatch) => {
+	try {
+		console.log('products :>> ', products);
+		console.log('filterItem :>> ', filterParameter);
+		dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
+		// products.filter(product=>product.filter)
+	} catch (error) {
+		console.log(error.message);
+	}
+};
