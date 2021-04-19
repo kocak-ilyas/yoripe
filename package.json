@@ -1,6 +1,6 @@
 {
     "name": "yoripe",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "author": "ilyas",
     "license": "MIT",
     "description": "Yoripe written by ilyas",
@@ -9,7 +9,9 @@
         "url": "git+https://github.com/kocak-ilyas/yoripe.git"
     },
     "keywords": [
-        "album"
+        "e-commerce",
+        "React",
+        "Redux"
     ],
     "bugs": {
         "url": "https://github.com/kocak-ilyas/yoripe/issues"
@@ -25,8 +27,12 @@
         "bootstrap": "^4.6.0",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
+        "react-redux": "^7.2.3",
+        "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.3",
         "reactstrap": "^8.9.0",
+        "redux": "^4.0.5",
+        "redux-thunk": "^2.3.0",
         "web-vitals": "^1.1.1"
     },
     "scripts": {
