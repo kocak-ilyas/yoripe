@@ -8,7 +8,7 @@ const SortNav = () => {
 	const products = useSelector((state) => state.productsReducer);
 
 	const handleChange = (filterParameter) => {
-		dispatch(filterProducts(products, filterParameter));
+		dispatch(filterProducts(filterParameter));
 	};
 	return (
 		<div className="navbar pt-0">
