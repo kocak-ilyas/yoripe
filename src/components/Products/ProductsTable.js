@@ -3,7 +3,6 @@ import LikeCounter from './LikeCounter';
 import ProductDate from './ProductDate';
 
 const ProductsTable = (data) => {
-    console.log(data.products);
     return (
         <>
             {data.products.productsTable.map((product) => (

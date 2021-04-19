@@ -16,12 +16,57 @@ export const getProducts = () => (dispatch) => {
 		});
 };
 export const filterProducts = (products, filterParameter) => (dispatch) => {
-	try {
-		console.log('products :>> ', products);
-		console.log('filterItem :>> ', filterParameter);
-		dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
-		// products.filter(product=>product.filter)
-	} catch (error) {
-		console.log(error.message);
+	switch (filterParameter) {
+		case 'popular':
+			try {
+				dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
+				dispatch({
+					type: actionTypes.FETCH_PRODUCTS_SUCCESS,
+					payload: products.productsTable.filter((item) => item.like > 8000)
+				});
+			} catch (error) {
+				console.log(error.message);
+			}
+			break;
+		case 'auction':
+			try {
+				dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
+				// dispatch({
+				// 	type: actionTypes.FETCH_PRODUCTS_SUCCESS,
+				// 	payload: products.productsTable.filter((item) => item.like > 8000)
+				// });
+				console.log('auction clicked');
+			} catch (error) {
+				console.log(error.message);
+			}
+			break;
+		case 'flatRate':
+			try {
+				dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
+				// dispatch({
+				// 	type: actionTypes.FETCH_PRODUCTS_SUCCESS,
+				// 	payload: products.productsTable.filter((item) => item.like > 8000)
+				// });
+				console.log('flatRate clicked');
+			} catch (error) {
+				console.log(error.message);
+			}
+			break;
+
+		case 'scheduled':
+			try {
+				dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
+				// dispatch({
+				// 	type: actionTypes.FETCH_PRODUCTS_SUCCESS,
+				// 	payload: products.productsTable.filter((item) => item.like > 8000)
+				// });
+				console.log('scheduled clicked');
+			} catch (error) {
+				console.log(error.message);
+			}
+			break;
+
+		default:
+			break;
 	}
 };
