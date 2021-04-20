@@ -11,6 +11,13 @@ const Product = () => {
 
 	return (
 		<div className="container-fluid mb-5">
+			{products.searchParameter === '' ? null : (
+				<div>
+					{products.productsTable.length} items found in
+					<strong>&nbsp;{products.searchParameter}&nbsp;</strong>
+					search
+				</div>
+			)}
 			<div className="row">
 				{products.isLoading ? (
 					<Loading />
@@ -70,7 +77,7 @@ const Product = () => {
 													style={{
 														fontSize: '1rem',
 														lineHeight: '1.2',
-														height: '19px',
+														height: '20px',
 														overflow: 'hidden',
 														textOverflow: 'ellipsis'
 													}}

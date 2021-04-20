@@ -5,6 +5,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 
 import menuIcon from '../../image/menuIcon.svg';
 import './styles.css';
+import SearchInput from './SearchInput';
 
 const SearchNav = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -65,13 +66,7 @@ const SearchNav = () => {
 							</div>
 						</div>
 						<label className="col pr-1">
-							<input
-								aria-live="polite"
-								className="form-control rounded pl-5"
-								type="search"
-								placeholder="Search Products"
-								aria-label="Search"
-							/>
+							<SearchInput />
 						</label>
 						<IconButton className="m-0" aria-label="show 2 new notifications" color="inherit">
 							<Badge badgeContent={2} color="secondary">
