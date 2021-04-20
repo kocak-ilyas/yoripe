@@ -1,8 +1,18 @@
+# Hello Mohamed hope you are doing well.
+Task done which has usable filter (Popular, Auction, Flat-rate, Scheduled) and Search Bar.
+Popular badge covers more than 8000 by filtering and sorts from higher to lower number.
+Auction, Flat-rate, Scheduled badges filters according to "salesMethod" parameter in api.
+I added a badge to card of product so that the filters can be viewed better.
+
+Search is running when you start typing in the search bar, not need to submit button.
+I use private ".env" file but I added ".env.example" file in GitHub which has REACT_APP_baseURL because maybe you want to check data of api (https://app.apiary.io/kocakilyas/)
+
+
 # Yoripe Task
 
 Setup and run : ```npm i && npm start``` 
 
-<h3>Yoripe developed with React, Node.js</h3>
+<h3>Yoripe developed with React, Redux and Node.js</h3>
 <br/>
 <h6>Demo                : https://yoripe.netlify.app/ </h6>
 <h6>Repository          : https://github.com/kocak-ilyas/yoripe.git </h6>
