@@ -33,6 +33,24 @@ const Product = () => {
 													<LikeCounter like={product.like} />
 												</div>
 											</div>
+											<div className="row justify-content-start m-0 p-0">
+												<div
+													style={{
+														fontSize: '0.7rem',
+														lineHeight: '1.4',
+														height: '15px'
+													}}
+													className="badge bg-warning m-0 pt-0 pr-1 pl-1"
+												>
+													{product.salesMethod === 'auction' ? (
+														'Auction'
+													) : product.salesMethod === 'flatRate' ? (
+														'Flat Rate'
+													) : product.salesMethod === 'scheduled' ? (
+														'Scheduled'
+													) : null}
+												</div>
+											</div>
 										</div>
 										<div className="col align-self-end position-absolute m-0 p-3">
 											<img

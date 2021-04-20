@@ -1,7 +1,7 @@
 import * as actionTypes from '../constants/actionTypes';
 import API from 'apisauce';
-const baseURL = process.env.REACT_APP_baseURL;
-const ApiCall = API.create({ baseURL: baseURL });
+
+const ApiCall = API.create({ baseURL: process.env.REACT_APP_baseURL });
 
 export const getProducts = () => (dispatch) => {
 	ApiCall.get('/api')
@@ -37,9 +37,8 @@ export const filterProducts = (filterParameter) => (dispatch) => {
 						dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
 						dispatch({
 							type: actionTypes.FETCH_PRODUCTS_SUCCESS,
-							payload: res.data.products
+							payload: res.data.products.filter((item) => item.salesMethod === 'auction')
 						});
-						console.log('auction clicked');
 					} catch (error) {
 						console.log(error.message);
 					}
@@ -49,9 +48,8 @@ export const filterProducts = (filterParameter) => (dispatch) => {
 						dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
 						dispatch({
 							type: actionTypes.FETCH_PRODUCTS_SUCCESS,
-							payload: res.data.products
+							payload: res.data.products.filter((item) => item.salesMethod === 'flatRate')
 						});
-						console.log('flatRate clicked');
 					} catch (error) {
 						console.log(error.message);
 					}
@@ -62,9 +60,8 @@ export const filterProducts = (filterParameter) => (dispatch) => {
 						dispatch({ type: actionTypes.CHANGE_FILTER_PARAMETER, payload: filterParameter });
 						dispatch({
 							type: actionTypes.FETCH_PRODUCTS_SUCCESS,
-							payload: res.data.products
+							payload: res.data.products.filter((item) => item.salesMethod === 'scheduled')
 						});
-						console.log('scheduled clicked');
 					} catch (error) {
 						console.log(error.message);
 					}
