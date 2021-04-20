@@ -10,7 +10,7 @@ I use private ".env" file but I added ".env.example" file in GitHub which has RE
 
 # Yoripe Task
 
-Setup and run : ```npm i && npm start``` 
+Setup and run : ```npm i  &&  npm start``` -  ```http://localhost:3000/```
 
 <h3>Yoripe developed with React, Redux and Node.js</h3>
 <br/>
