@@ -117,7 +117,7 @@ export const changeSearchParameters = (value) => (dispatch) => {
 				});
 			} else {
 				const newProducts = [];
-				res.data.products.map((x) => (x.name.toLowerCase().search(value) > 1 ? newProducts.push(x) : null));
+				res.data.products.map((x) => (x.name.toLowerCase().search(value) > -1 ? newProducts.push(x) : null));
 
 				dispatch({
 					type: actionTypes.FETCH_PRODUCTS,

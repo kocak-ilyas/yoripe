@@ -4,7 +4,7 @@ Popular badge covers more than 8000 by filtering and sorts from higher to lower 
 Auction, Flat-rate, Scheduled badges filters according to "salesMethod" parameter in api.
 I added a badge to card of product so that the filters can be viewed better.
 
-Search is running when you start typing in the search bar, not need to submit button.
+To search for the product name, start typing in the search bar, not need to submit button.
 I use private ".env" file but I added ".env.example" file in GitHub which has REACT_APP_baseURL because maybe you want to check data of api (https://app.apiary.io/kocakilyas/)
 
 
