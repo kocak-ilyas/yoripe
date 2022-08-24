@@ -1,4 +1,3 @@
-# Hello Mohamed hope you are doing well.
 Task done which has usable filter (Popular, Auction, Flat-rate, Scheduled) and Search Bar.
 Popular badge covers more than 8000 by filtering and sorts from higher to lower number.
 Auction, Flat-rate, Scheduled badges filters according to "salesMethod" parameter in api.
